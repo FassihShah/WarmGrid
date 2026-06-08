@@ -1,4 +1,5 @@
 import os
+from urllib.parse import urlparse, urlunparse
 from sqlalchemy.ext.asyncio import AsyncSession, create_async_engine, async_sessionmaker
 from sqlalchemy.orm import DeclarativeBase
 
@@ -10,6 +11,12 @@ if _raw_url.startswith("postgres://"):
     _raw_url = _raw_url.replace("postgres://", "postgresql+asyncpg://", 1)
 elif _raw_url.startswith("postgresql://") and "+asyncpg" not in _raw_url:
     _raw_url = _raw_url.replace("postgresql://", "postgresql+asyncpg://", 1)
+
+# asyncpg doesn't accept psycopg2-style query params (sslmode, channel_binding, etc.)
+# Strip all query params from the URL — SSL is handled via connect_args below.
+if not _raw_url.startswith("sqlite"):
+    parsed = urlparse(_raw_url)
+    _raw_url = urlunparse(parsed._replace(query=""))
 
 DATABASE_URL = _raw_url
 IS_SQLITE = DATABASE_URL.startswith("sqlite")
