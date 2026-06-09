@@ -22,6 +22,22 @@
 
 ---
 
+<img width="1600" height="720" alt="WhatsApp Image 2026-06-07 at 2 16 34 PM" src="https://github.com/user-attachments/assets/447527ee-6bfb-4141-a384-a1db3681d743" />
+
+--
+
+<img width="1600" height="712" alt="WhatsApp Image 2026-06-07 at 2 17 47 PM" src="https://github.com/user-attachments/assets/5b6ef9c2-fea2-40f1-8982-6608a013ae01" />
+
+--
+
+<img width="1600" height="717" alt="WhatsApp Image 2026-06-07 at 2 18 06 PM" src="https://github.com/user-attachments/assets/13b3b47a-4830-4f73-8fb0-d501e76355bc" />
+
+--
+
+<img width="1384" height="865" alt="WhatsApp Image 2026-06-07 at 2 19 45 PM" src="https://github.com/user-attachments/assets/e5e38740-b945-401b-8c8f-8850c3089331" />
+
+---
+
 ## Tech Stack
 
 | Layer | Technology |
